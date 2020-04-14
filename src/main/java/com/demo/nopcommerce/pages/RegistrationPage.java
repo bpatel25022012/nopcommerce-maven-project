@@ -30,44 +30,44 @@ public class RegistrationPage extends Utility {
 
         clickonElement(genderRadioBtn);
     }
-    public void enterFirstName(){
+    public void enterFirstName(String fname){
 
-        sendTextToElement(firstNameField,"Bhavesh");
+        sendTextToElement(firstNameField,fname);
     }
-    public void enterLastName(){
+    public void enterLastName(String lname){
 
-        sendTextToElement(lastNameField,"Patel");
-
-    }
-    public void enterDateOfBirth (){
-
-        sendTextToElement(dateOfBirthDay,"4");
+        sendTextToElement(lastNameField,lname);
 
     }
-    public void enterMonthOfBirth (){
+    public void enterDateOfBirth (String date){
 
-        sendTextToElement(dateOfBirthMonth,"April");
-    }
-    public void enterYearOfBirth (){
-
-        sendTextToElement(dateOfBirthYear,"1976");
-    }
-    public void enterEmailId(){
-        sendRandomEmail(emailField);
-
+        sendTextToElement(dateOfBirthDay,date);
 
     }
-    public void enterCompanyName(){
+    public void enterMonthOfBirth (String month){
 
-        sendTextToElement(companyNameFiled,"BestInTesting Ltd.");
+        sendTextToElement(dateOfBirthMonth,month);
     }
-    public void enterPassword (){
-        sendRandomPassword(passwordFiled);
+    public void enterYearOfBirth (String year){
+
+        sendTextToElement(dateOfBirthYear,year);
+    }
+    public void enterEmailId(String Email){
+        sendTextToElement(emailField,Email);
+
 
     }
-    public void enterConfirmPassword (){
+    public void enterCompanyName(String compname){
 
-        sendRandomPasswordToNextField(conPasswordFiled);
+        sendTextToElement(companyNameFiled,compname);
+    }
+    public void enterPassword (String password){
+      sendTextToElement(passwordFiled, password);
+
+    }
+    public void enterConfirmPassword (String conPassword){
+
+      sendTextToElement(conPasswordFiled,conPassword);
 
 
 

@@ -5,7 +5,8 @@ import org.openqa.selenium.By;
 
 /*
 Created By Bhavesh
-*/public class ComputerPage extends Utility {
+*/
+public class ComputerPage extends Utility {
 
     By deskTops = By.xpath("//h2[@class='title']//a[contains(text(),'Desktops')]");
     By noteBooks = By.xpath("//h2[@class='title']//a[contains(text(),'Notebooks')]");
@@ -14,7 +15,7 @@ Created By Bhavesh
 
 
     public void clickOnDeskTops(){
-
+waitUntilPresenceOfElementLocated(deskTops,30);
         clickonElement(deskTops);
     }
     public void clickOnNoteBooks(){

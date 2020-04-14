@@ -18,14 +18,14 @@ public class LoginPage extends Utility {
         waitUntilPresenceOfElementLocated(emailField,20);
     }
 
-    public void setEmailField(){
+    public void enterEmailField(String email){
 
-        sendTextToElement(emailField, "alpha1@gmail.com");
+        sendTextToElement(emailField, email);
     }
 
-    public void setPasswordField(){
+    public void enterPasswordField(String password){
 
-        sendTextToElement(passwordField, "Tiger123");
+        sendTextToElement(passwordField,password);
     }
 
     public void setClickOnLoginButton(){
@@ -39,7 +39,7 @@ public class LoginPage extends Utility {
 
     }
     public String getLoginPageText(){
-
+//waitUntilPresenceOfElementLocated(loginPageText,30);
         return getTextFromElement(loginPageText);
     }
 
